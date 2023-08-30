@@ -1,0 +1,93 @@
+/* cart.module.css */
+
+/* Overall product card */
+.productCard {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 29%;
+  transition: all 0.3s ease; /* Add a smooth transition effect */
+}
+
+.productCard:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+  transform: translateY(-3px); /* Lift the card slightly on hover */
+}
+
+/* Product image */
+.productImage {
+  flex: 0 0 100px;
+  margin-right: 20px;
+}
+
+.productImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Product details */
+.productDetails {
+  flex-grow: 3;
+}
+
+.productName {
+  margin-bottom: 10px;
+}
+
+.productName h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; /* Darken the title text color */
+}
+
+.productName h3:last-child {
+  font-size: 16px;
+  font-weight: normal;
+  color: #888;
+}
+
+.productName h6 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* Quantity controls and delete button */
+.spanBut {
+  display: flex;
+  align-items: center;
+}
+
+.sInc,
+.sDec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #eee;
+  color: #888;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 50%; /* Make the buttons circular */
+}
+
+
+
+/* Show details button */
+
+
+
+/* Add styles for the list format */
+
+
+/* Rest of your existing styles */

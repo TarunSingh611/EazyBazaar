@@ -1,0 +1,145 @@
+/* ProductList.css */
+
+.productList {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productCard {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: calc(25% - 20px); /* Set the width to occupy 50% of the container minus the margin */
+  margin: 10px; /* Add margin around each card */
+  box-sizing: border-box; /* Include padding and border in the card's width */
+}
+
+.productImage {
+  height: 200px; /* Set the desired fixed height for the product image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.productDetails {
+  margin-top: 10px;
+}
+
+.productName label,
+.productDetails label {
+  font-weight: bold;
+}
+
+.productName input,
+.productDetails input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.productName input[type="text"] {
+  font-size: 16px;
+}
+
+.productName input[type="text"]:focus,
+.productDetails input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.buttonCon {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+}
+
+.buttonApply {
+  width: 100%;
+}
+
+.buttonDelete {
+  width: 100%;
+}
+
+.loadMore {
+  background-color: #C5C5C5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.addProd {
+  font-size: 36px;
+  color: #333;
+  background-color: rgba(221, 221, 221, 0.5); /* translucent background */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+padding: 0;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addProd:hover {
+  background-color: rgba(221, 221, 221, 1); /* opaque background on hover */
+}
+
+.addProd:hover:active {
+  background-color: dodgerblue; /* blue background when clicked and hovered */
+}
+
+.message {
+  display: none;
+  font-size: larger;
+  color: white;
+  padding: 5px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Responsive styling for cards on smaller screens */
+@media (max-width: 400px) {
+  .productCard {
+    width: 100%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+  .productCard {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+  .productCard {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (min-width: 1201px) {
+  .productCard {
+    width: calc(25% - 20px);
+  }
+}

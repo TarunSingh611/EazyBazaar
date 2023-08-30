@@ -1,0 +1,157 @@
+/* body starts */
+body {
+  padding-top: 60px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.productCard {
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  height: 350px;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  padding: 5em;
+}
+
+.productImage {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  height: 100%;
+  transition: width 0.3s, height 0.3s;
+}
+
+.productDetails {
+
+  display: none;
+width:80%;
+text-align: center;
+  height: 100%;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Center the details using translation */
+  background-color: rgba(255, 255, 255, 0.9);
+
+ 
+}
+
+.productCard:hover .productDetails {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.productCard:hover .productImage img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.productName {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+
+  height: fit-content;
+}
+
+.showDetailsBtn,
+.add2Cart {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  margin: 2px 2px 2px 0px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.loadMore {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+
+.close {
+  width: 100%;
+  height: 100%;
+}
+
+.message {
+
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  transform: translateX(-50%);
+}
+
+.quantityDiv {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.quantity {
+  width: 30px;
+  margin: auto;
+}
+
+.buttonDiv {
+  display: flex;
+  width: 100%;
+  padding: 0;
+}
+
+.doneBtn {
+  width: 50%;
+  margin: 0;
+  background-color: #4caf50;
+  margin:2px;
+}
+
+.cancelBtn {
+  width: 50%;
+  margin: 0;
+  margin:2px;
+  background-color: grey;
+}
+
+
+
+
+
+/* Responsive styling for cards on smaller screens */
+@media (min-width: 601px) and (max-width: 1000px) {
+  .productCard {
+    width: 50%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+  .productCard {
+    width: 100%;
+  }
+}
