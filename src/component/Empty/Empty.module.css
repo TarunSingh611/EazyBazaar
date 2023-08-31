@@ -1,7 +1,7 @@
 .EmptyText p{
 align-content: center;
 font-weight: 800;
-font-size:50px;
+font-size:40px;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -45,6 +45,12 @@ margin: auto;
 margin-top: 20vh;
 }
 
+.buttonCart{
+  background: -webkit-linear-gradient(left, #57aacb 0%, #78d0ed 100%);
+  background: -moz-linear-gradient(left, #57aacb 0%, #78d0ed 100%);
+  background: -o-linear-gradient(left, #57aacb 0%, #78d0ed 100%);
+  background: linear-gradient(to right, #57aacb 0%, #78d0ed 100%);
+}
 .buttonPurchase {
   background: -webkit-linear-gradient(right, #696ccb 0%, #927fd8 51%, #bd97e4 100%);
   background: -moz-linear-gradient(right, #696ccb 0%, #927fd8 51%, #bd97e4 100%);

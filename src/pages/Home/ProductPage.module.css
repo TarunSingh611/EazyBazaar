@@ -5,7 +5,10 @@
 .homeBody {
   margin-top: 50px;
   padding-top: 30px;
-background-image: url("../../assets/bgimage/_6f869176-2859-49fe-950e-93d57f95f635.jpeg");
+/* background-image: url("../../assets/bgimage/_6f869176-2859-49fe-950e-93d57f95f635.jpeg"); */
+background-image: url("../../assets/Bg/3.jpg");
+background-size: cover;
+background-color: rgb(255, 255, 255);
 }
 
 h3{margin-top: 0;}

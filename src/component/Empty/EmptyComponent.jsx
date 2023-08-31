@@ -11,7 +11,10 @@ function EmptyCart() {
 				</div>
 
 				<div>
-					<button onClick={() => navigate("/")}>
+					<button
+						className={style.buttonCart}
+						onClick={() => navigate("/")}
+					>
 						SHOP NOW
 					</button>
 				</div>
